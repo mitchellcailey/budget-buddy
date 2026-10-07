@@ -1,0 +1,18 @@
+[project]
+name = "budget-buddy"
+version = "0.1.0"
+description = "CLI that categorizes spending from a CSV and uses Claude to produce a budget with saving tips."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "anthropic>=1.9.0",
+    "pandas>=2.2",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
